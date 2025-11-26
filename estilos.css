@@ -1,195 +1,132 @@
-/* Reset & Base */
-*,
-*::before,
-*::after { box-sizing: border-box; margin: 0; padding: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-html { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-body { background: var(--bg); color: var(--text); line-height: 1.5; transition: background 0.3s, color 0.3s; }
-
-.container { max-width: 1400px; margin: 0 auto; padding: 0 1rem; }
-
-/* Variáveis de tema */
+/* Base & Variáveis */
 :root {
-  --bg: #fafafa;
-  --surface: #ffffff;
-  --text: #0a0a0a;
-  --text-secondary: #555;
-  --border: #e5e5e5;
-  --accent: #007aff;
-  --shadow: 0 4px 20px rgba(0,0,0,0.06);
+  /* Cores de fundo */
+  --laranja-100: #ffedd5;
+  --orange-50: #fff7ed;
+  --dark-900: #111827;
+  --dark-950: #030712;
+  --black: #000;
+  --yellow-500: #eab308;
+
+  /* Glassmorphism */
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
 }
 
-[data-theme="dark"] {
-  --bg: #0a0a0a;
-  --surface: #1c1c1e;
-  --text: #ffffff;
-  --text-secondary: #aaaaaa;
-  --border: #38383a;
-  --shadow: 0 4px 20px rgba(0,0,0,0.4);
+.dark {
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(17, 24, 39, 0.8);
 }
 
-/* Header */
-.header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  z-index: 1000;
-  padding: 0.75rem 0;
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Fundo Animado "Povoado" e Mais Visível --- */
+.body-background-animado {
+    background: linear-gradient(to bottom right, var(--laranja-100), var(--orange-50), white);
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow-x: hidden; /* Garante que os emojis fora da tela não causem scroll horizontal */
+    z-index: 1; /* Garante que o conteúdo esteja acima dos emojis de fundo */
+}
+
+.dark .body-background-animado {
+    background: linear-gradient(to bottom right, var(--dark-900), var(--dark-950), var(--black));
+}
+
+/* Container para os emojis de fundo */
+.bg-decorations {
+    position: fixed; /* Fixa os emojis no viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Não interfere com cliques do usuário */
+    z-index: 0; /* Garante que fiquem no fundo */
+    overflow: hidden;
+}
+
+.bg-emoji {
+    position: absolute;
+    opacity: 0.15; /* Aumentado para 15% - mais visível que 6% */
+    user-select: none;
+    /* Removido filter: grayscale(20%); para cores mais vibrantes */
+}
+
+/* Variações de Posição, Tamanho e Rotação para maior preenchimento e profundidade */
+.emoji-1 { top: 5%; left: 8%; font-size: 10rem; transform: rotate(15deg); opacity: 0.12; } /* Cacto Grande */
+.emoji-2 { top: 20%; right: 1%; font-size: 7rem; transform: rotate(-25deg); } /* Milho */
+.emoji-3 { bottom: 10%; left: 5%; font-size: 5rem; transform: rotate(40deg); opacity: 0.18; } /* Pimenta Grande */
+.emoji-4 { top: 60%; left: -3%; font-size: 8rem; transform: rotate(-10deg); opacity: 0.1; } /* Caranguejo */
+.emoji-5 { top: 35%; left: 30%; font-size: 6rem; transform: rotate(5deg); opacity: 0.15; } /* Chapéu de Couro */
+.emoji-6 { bottom: 25%; right: 10%; font-size: 4rem; transform: rotate(0deg); opacity: 0.2; } /* Sol Pequeno e Quente */
+.emoji-7 { top: 0%; left: 50%; font-size: 18rem; transform: translateX(-50%); color: var(--yellow-500); opacity: 0.08; z-index: -1;} /* Solzão no Topo */
+.emoji-8 { bottom: 2%; right: 20%; font-size: 9rem; transform: rotate(-30deg); opacity: 0.1; } /* Coco / Coquinho */
+.emoji-9 { top: 55%; right: 25%; font-size: 5rem; transform: rotate(10deg); opacity: 0.18; } /* Peixe */
+.emoji-10 { top: 10%; right: 40%; font-size: 6rem; transform: rotate(20deg); opacity: 0.12; } /* Pamonha / Comida Típica */
+.emoji-11 { bottom: 40%; left: 15%; font-size: 4rem; transform: rotate(-5deg); opacity: 0.22; } /* Pimenta Menor */
+.emoji-12 { top: 70%; left: 45%; font-size: 7rem; transform: rotate(35deg); opacity: 0.1; } /* Cacto Menor */
+
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+.dark ::-webkit-scrollbar-thumb { background: #4b5563; }
+
+/* Utilitários Glassmorphism */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
-.header-content {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-}
-.logo { font-size: 1.4rem; font-weight: 700; }
-.search-bar input {
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  width: 100%;
-  max-width: 400px;
-  background: var(--bg);
-  font-size: 1rem;
-}
-.theme-toggle {
-  background: none; border: none; font-size: 1.5rem; cursor: pointer; position: relative; width: 48px; height: 48px;
-}
-.theme-toggle .moon { display: none; }
-[data-theme="dark"] .theme-toggle .sun { display: none; }
-[data-theme="dark"] .theme-toggle .moon { display: block; }
-
-/* Filtros */
-.filters {
-  margin-top: 80px;
-  padding: 1.5rem 0;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-}
-.filter-group { margin-bottom: 1rem; }
-.filter-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
-.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.chip {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  background: var(--bg);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.chip.active, .chip:hover { background: var(--accent); color: white; border-color: var(--accent); }
-.clear-btn { background: none; border: none; color: var(--accent); text-decoration: underline; cursor: pointer; }
-
-/* Grid Principal */
-.main-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-@media (min-width: 1024px) {
-  .main-grid { grid-template-columns: 1fr 1fr; }
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Cards */
-.card {
-  background: var(--surface);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s, box-shadow 0.2s;
-  cursor: pointer;
-}
-.card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
-.card img {
-  width: 100%; height: 180px; object-fit: cover;
-}
-.card-content {
-  padding: 1rem;
-}
-.card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-.card p { font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0; }
-.tags { display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap; }
-.tag {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
-  background: var(--bg);
-  border-radius: 30px;
-}
-
-/* Mapa */
-.map-container {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  height: 400px;
-}
-#map { height: 100%; width: 100%; }
-.fullscreen-btn {
-  position: absolute;
-  top: 12px; right: 12px;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem;
-  cursor: pointer;
-  z-index: 400;
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
+/* Leaflet */
+.leaflet-container { font-family: 'Inter', sans-serif; background: #e5e7eb; }
+.dark .leaflet-container { background: #111827; }
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
-  z-index: 2000;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.05);
 }
-.modal.active { display: flex; }
-.modal-content {
-  background: var(--surface);
-  border-radius: 20px;
-  max-width: 500px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
-.modal-close {
-  position: absolute;
-  top: 16px; right: 16px;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: var(--text-secondary);
-}
-.modal-body { padding: 2rem; }
-.modal-body img { width: 100%; border-radius: 12px; margin: 1rem 0; }
-.whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #25d366;
+.dark .leaflet-popup-content-wrapper {
+  background: rgba(30, 41, 59, 0.95);
   color: white;
-  padding: 0.9rem 1.5rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
 }
+.leaflet-popup-content { margin: 0 !important; width: 200px !important; }
+.leaflet-popup-tip { background: rgba(255, 255, 255, 0.95); }
+.dark .leaflet-popup-tip { background: rgba(30, 41, 59, 0.95); }
 
 /* Animações */
-.fade-in { animation: fadeIn 0.4s ease-out; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .header-content { flex-direction: column; }
-  .search-bar input { max-width: none; }
-  .map-container { height: 300px; }
+.mask-fade-right {
+    -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, black 90%, transparent 100%);
 }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando... | Sabor Sergipano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: { 
+                    colors: { 
+                        laranja: { 50: '#fff7ed', 500: '#f97316', 600: '#ea580c' },
+                        dark: { 900: '#111827' } // Adicionei dark para referência no body
+                    } 
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="bg-gray-50 dark:bg-dark-900 text-gray-900 dark:text-gray-100 min-h-screen">
+
+    <a href="index.html" class="fixed top-6 left-6 z-50 p-3 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full shadow-lg border border-white/20 hover:scale-105 transition-transform group">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+    </a>
+
+    <div id="content" class="pb-20 min-h-screen">
+        <div class="animate-pulse flex flex-col items-center justify-center h-screen">
+            <div class="w-12 h-12 border-4 border-laranja-500 border-t-transparent rounded-full animate-spin"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Função para simular o comportamento de initTheme do index.html (para Dark Mode)
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        }
+        initTheme();
+
+
+        // Lógica de Carregamento e Renderização
+        async function loadDetails() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+
+            if(!id) { window.location.href = 'index.html'; return; }
+
+            try {
+                // Ajustei o caminho do JSON para ser relativo
+                const resp = await fetch('estabelecimentos.json'); 
+                const data = await resp.json();
+                const item = data.find(e => e.id === id);
+
+                if(!item) throw new Error('Item não encontrado');
+                renderDetails(item);
+
+            } catch (e) {
+                console.error("Erro ao carregar os detalhes:", e);
+                document.getElementById('content').innerHTML = `
+                    <div class="p-20 text-center flex flex-col items-center justify-center min-h-screen">
+                        <div class="text-6xl mb-4">😔</div>
+                        <h2 class="text-2xl font-bold mb-2">Local Não Encontrado</h2>
+                        <p class="text-gray-500 dark:text-gray-400">Verifique o link ou volte para a página inicial.</p>
+                        <a href="index.html" class="mt-6 px-6 py-3 bg-laranja-600 text-white font-bold rounded-full hover:bg-laranja-700 transition">Voltar</a>
+                    </div>
+                `;
+            }
+        }
+
+        function renderDetails(est) {
+            document.title = `${est.nome} | Sabor Sergipano`;
+            
+            // Link Dinâmico do Google Maps
+            const mapLink = est.link_google_maps || 
+                (est.latitude && est.longitude ? `https://www.google.com/maps/search/?api=1&query=${est.latitude},${est.longitude}` : '#');
+            
+            // Links Sociais
+            const linkInstagram = est.instagram_handle ? `https://www.instagram.com/${est.instagram_handle}` : null;
+            const linkWhatsapp = est.whatsapp_numero ? `https://wa.me/55${est.whatsapp_numero.replace(/\D/g, '')}` : null;
+            
+            // Gera HTML para os Pratos Destaque
+            const pratosDestaqueHtml = est.pratos_destaque && est.pratos_destaque.length > 0 ? est.pratos_destaque.map(prato => `
+                <div class="glass-card p-5 rounded-2xl flex justify-between items-start group hover:border-laranja-300 transition border border-white/20 dark:border-gray-800/50">
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-white group-hover:text-laranja-600 transition">${prato.nome}</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">${prato.descricao}</p>
+                    </div>
+                    <span class="font-bold text-laranja-600 bg-laranja-50 dark:bg-laranja-900/20 px-3 py-1 rounded-lg ml-2 whitespace-nowrap">${prato.preco}</span>
+                </div>
+            `).join('') : '<p class="text-gray-500 dark:text-gray-400">Nenhum prato em destaque cadastrado ainda.</p>';
+
+
+            const html = `
+                <div class="relative h-[45vh] lg:h-[60vh] w-full">
+                    <img src="${est.imagens[0]}" alt="${est.nome}" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 md:p-12">
+                        <div class="max-w-4xl mx-auto">
+                            <span class="bg-laranja-500 text-white px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider mb-3 inline-block shadow-lg">${est.tipo_culinaria}</span>
+                            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-md">${est.nome}</h1>
+                            <p class="text-gray-200 text-lg flex items-center gap-2">
+                                <span class="opacity-80">📍 ${est.cidade}</span> • <span class="text-white font-bold">${est.faixa_preco}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="max-w-4xl mx-auto px-4 -mt-8 relative z-10 flex flex-col gap-8">
+                    
+                    <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+                        
+                        <a href="${mapLink}" target="_blank" class="flex-1 min-w-[140px] bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center gap-2 hover:-translate-y-1 transition text-center group border border-white/20 dark:border-gray-800/50">
+                            <span class="text-2xl group-hover:scale-110 transition">🚗</span>
+                            <span class="font-bold text-sm text-gray-700 dark:text-gray-200">Como Chegar</span>
+                        </a>
+                        
+                        ${linkInstagram ? `
+                        <a href="${linkInstagram}" target="_blank" class="flex-1 min-w-[140px] bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center gap-2 hover:-translate-y-1 transition text-center group border border-white/20 dark:border-gray-800/50">
+                            <span class="text-2xl group-hover:scale-110 transition">📸</span>
+                            <span class="font-bold text-sm text-gray-700 dark:text-gray-200">Instagram</span>
+                        </a>` : ''}
+
+                        ${linkWhatsapp ? `
+                        <a href="${linkWhatsapp}" target="_blank" class="flex-1 min-w-[140px] bg-green-500 text-white p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center gap-2 hover:-translate-y-1 transition text-center hover:bg-green-600">
+                            <span class="text-2xl">💬</span>
+                            <span class="font-bold text-sm">WhatsApp</span>
+                        </a>` : ''}
+
+                    </div>
+
+                    <section class="glass-panel p-6 md:p-8 rounded-3xl border border-white/20 dark:border-gray-800/50 shadow-xl">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2 text-laranja-600">📖 A História do Lugar</h2>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">${est.descricao}</p>
+                        
+                        ${est.historia ? `<div class="bg-orange-50 dark:bg-laranja-900/10 p-5 rounded-xl border-l-4 border-laranja-500 italic text-gray-700 dark:text-gray-300 shadow-inner">"${est.historia}"</div>` : ''}
+                        
+                        ${est.dica_do_chef ? `
+                        <div class="mt-6 flex items-start gap-3 p-4 bg-white dark:bg-gray-700 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                            <span class="text-3xl text-laranja-500">👨‍🍳</span>
+                            <div>
+                                <h3 class="font-bold text-gray-900 dark:text-white">Dica do Chef</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">${est.dica_do_chef}</p>
+                            </div>
+                        </div>` : ''}
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-laranja-600">🍽️ Pratos que você precisa provar</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            ${pratosDestaqueHtml}
+                        </div>
+                    </section>
+
+                    <section>
+                         <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-laranja-600">🖼️ Mais Fotos</h2>
+                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-10">
+                            ${est.imagens.map((img, index) => index > 0 ? `<img src="${img}" alt="Foto ${index + 1} de ${est.nome}" class="w-full h-40 md:h-56 object-cover rounded-2xl hover:scale-[1.02] transition duration-500 cursor-pointer shadow-md">` : '').join('')}
+                         </div>
+                    </section>
+                </main>
+            `;
+            document.getElementById('content').innerHTML = html;
+        }
+        loadDetails();
+    </script>
+</body>
+</html>
