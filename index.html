@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rotas Gastronômicas do Interior</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Fixo -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Rotas do Interior</h1>
+      
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar estabelecimento..." />
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar modo noturno">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Filtros -->
+  <section class="filters container">
+    <div class="filter-group">
+      <label>Tipo de culinária</label>
+      <div class="chips" id="culinariaFilter"></div>
+    </div>
+
+    <div class="filter-group">
+      <label>Faixa de preço</label>
+      <div class="chips">
+        <button class="chip" data-preco="R$">R$</button>
+        <button class="chip" data-preco="R$$">R$$</button>
+        <button class="chip" data-preco="R$$$">R$$$</button>
+        <button class="chip" data-preco="R$$$$">R$$$$</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>
+        <input type="checkbox" id="abertoAgora" /> Aberto agora
+      </label>
+    </div>
+
+    <button id="clearFilters" class="clear-btn">Limpar filtros</button>
+  </section>
+
+  <main class="container main-grid">
+    <!-- Lista de estabelecimentos -->
+    <section class="establishments-list" id="listaEstabelecimentos">
+      <p class="empty-state">Nenhum estabelecimento encontrado. Cadastre um no painel admin.</p>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map-container">
+      <div id="map"></div>
+      <button id="fullscreenMap" class="fullscreen-btn" aria-label="Mapa em tela cheia">↗</button>
+    </section>
+  </main>
+
+  <!-- Modal Detalhe -->
+  <div class="modal" id="modalDetalhe">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
