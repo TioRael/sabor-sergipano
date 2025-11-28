@@ -57,6 +57,23 @@ A culinária do interior tem um potencial turístico enorme, mas está pouco dig
 | Israel        | [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/TioRael) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/israel-menezes-perfil) |
 | Allan         | [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/SEU_GITHUB) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN) |
 | Andrey        | [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/SEU_GITHUB) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN) |
+| Felipe        | [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/SEU_GITHUB) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN) |
+
+## 📂 Estrutura do Projeto
+
+sabor-sergipano/<br>
+├── index.html<br>
+├── rotas.html<br>
+├── agencias.html<br>
+├── sobre.html<br>
+├── detalhes.html<br>
+├── script.js<br>
+├── estilos.css<br>
+├── estabelecimentos.json<br>
+├── assets/<br>
+│   └── imagens/<br>
+└── README.md<br>
+
 
 ## 🎯 Metodologia Ágil
 
@@ -85,4 +102,4 @@ Este projeto está sob a licença MIT – sinta-se à vontade para usar, modific
 
 **Feito com muito carinho, pimenta e farinha de mandioca no interior de Sergipe ❤️**
 
-Israel • Allan • Andrey – Novembro/2025
+Israel • Allan • Andrey • Felipe – Novembro/2025
