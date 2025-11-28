@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "titulo": "🌵 Rota do Cangaço & Sabores",
+    "subtitulo": "1 Dia • 3 Paradas",
+    "descricao_curta": "Uma viagem pela história e culinária do sertão. Começando em Itabaiana e indo até Canindé de São Francisco.",
+    "imagem_capa": "/assets/imagens/rotas/rotadocangaco.jpg",
+    "info_tecnica": {
+      "duracao": "12 Horas",
+      "distancia": "200km (Total)",
+      "melhor_horario": "Saída 06:00",
+      "preco_medio": "R$ 180,00",
+      "dificuldade": "Moderada",
+      "transporte": "Carro ou Van"
+    },
+    "extras": {
+      "o_que_levar": ["Protetor Solar", "Chapéu de Aba Larga", "Tênis Confortável", "Água (2L)", "Dinheiro em espécie"],
+      "historia": "Esta região foi palco das andanças de Lampião e Maria Bonita. A Grota do Angico, onde o bando foi emboscado, fica próxima ao local do passeio de catamarã.",
+      "curiosidades": "A culinária local utiliza muito a carne de bode e o peixe surubim, típicos do Rio São Francisco."
+    },
+    "paradas": [
+      {
+        "horario": "08:00",
+        "tipo": "Café da Manhã",
+        "local": "Mercado de Itabaiana",
+        "descricao": "Comece o dia com um cuscuz com carne do sol autêntico e compre castanhas frescas.",
+        "imagem": "/assets/imagens/rotas/mercadoita.jpg",
+        "link_mapa": "https://maps.app.goo.gl/Cpz6XZuRSYXYYY1t5"
+      },
+      {
+        "horario": "12:30",
+        "tipo": "Almoço",
+        "local": "Carrancas Restaurante (Canindé)",
+        "descricao": "A melhor moqueca de peixe de água doce na beira do Rio São Francisco.",
+        "imagem": "https://images.unsplash.com/photo-1534065604470-4f24c2fc2b3e?w=400",
+        "link_mapa": "#"
+      },
+      {
+        "horario": "16:00",
+        "tipo": "Pôr do Sol",
+        "local": "Passeio de Catamarã",
+        "descricao": "Finalize o dia navegando pelos cânions do Xingó com águas verdes esmeralda.",
+        "imagem": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400",
+        "link_mapa": "#"
+      }
+    ]
+  }
+]

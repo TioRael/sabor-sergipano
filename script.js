@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // --- CORE: DADOS ---
 async function carregarDados() {
     try {
-        const resp = await fetch('estabelecimentos.json');
+        const resp = await fetch('/db/estabelecimentos.json');
         estabelecimentos = await resp.json();
         atualizarStatusAberto();
         // Gerar o ID da sugestão do dia imediatamente após carregar
@@ -111,7 +111,7 @@ function renderSugestaoDoDia() {
         : { nome: "Prato da Casa", descricao: "Verifique o cardápio completo!" };
 
     container.innerHTML = `
-        <a href="detalhes.html?id=${sugestao.id}" class="block group">
+        <a href="/paginas/detalhes.html?id=${sugestao.id}" class="block group">
             <div class="h-24 overflow-hidden rounded-xl mb-3">
                 <img src="${sugestao.imagens[0]}" alt="${sugestao.nome}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
@@ -163,7 +163,7 @@ function renderLista(lista) {
 
         return `
         <article class="glass-card bg-white/60 dark:bg-gray-800/60 rounded-2xl overflow-hidden group hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 animate-fade-up border-0" style="animation-delay: ${delay}ms">
-            <a href="detalhes.html?id=${est.id}" class="block h-full flex flex-col">
+            <a href="/paginas/detalhes.html?id=${est.id}" class="block h-full flex flex-col">
                 <div class="relative h-56 overflow-hidden">
                     <img src="${est.imagens[0]}" alt="${est.nome}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
@@ -285,7 +285,7 @@ function renderMarcadores(lista) {
                     </div>
                     <div class="p-3 bg-white dark:bg-gray-800">
                         <p class="text-xs text-gray-500 mb-2">${est.tipo_culinaria} • ${est.cidade}</p>
-                        <a href="detalhes.html?id=${est.id}" class="block w-full text-center bg-laranja-500 text-white text-xs font-bold py-2 rounded-lg hover:bg-laranja-600 transition">Ver Detalhes</a>
+                        <a href="/paginas/detalhes.html?id=${est.id}" class="block w-full text-center bg-laranja-500 text-white text-xs font-bold py-2 rounded-lg hover:bg-laranja-600 transition">Ver Detalhes</a>
                     </div>
                 </div>
             `;

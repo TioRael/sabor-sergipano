@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nome": "Sergipe Tour",
+    "emoji": "🌵",
+    "descricao": "Especialistas no Sertão. Saídas diárias de Aracaju para os Cânions do Xingó e Rota do Cangaço com catamarã incluso.",
+    "tags": ["Xingó", "Transporte"],
+    "whatsapp": "557999999999",
+    "cadastur": true
+  },
+  {
+    "id": 2,
+    "nome": "Rota Raiz",
+    "emoji": "🎒",
+    "descricao": "Conecte-se com a natureza. Trilhas na Serra de Itabaiana, cachoeiras e experiências em fazendas tradicionais.",
+    "tags": ["Ecoturismo", "Trilhas"],
+    "whatsapp": "557999999999",
+    "cadastur": true
+  },
+  {
+    "id": 3,
+    "nome": "Sabores do Norte",
+    "emoji": "🦀",
+    "descricao": "A verdadeira imersão na cultura do caranguejo e do manguezal. Passeios de barco e almoços tradicionais.",
+    "tags": ["Culinária", "Cultural"],
+    "whatsapp": "557999999999",
+    "cadastur": true
+  },
+  {
+    "id": 4,
+    "nome": "Velho Chico Aventuras",
+    "emoji": "🛶",
+    "descricao": "Passeios exclusivos de lancha privativa pelo Rio São Francisco. Ideal para famílias e casais.",
+    "tags": ["Privativo", "Rio São Francisco"],
+    "whatsapp": "557999999999",
+    "cadastur": true
+  },
+  {
+    "id": 5,
+    "nome": "Aracaju City",
+    "emoji": "📸",
+    "descricao": "City tour histórico pelo centro de Aracaju, museus e orla de Atalaia. Conheça a história da capital.",
+    "tags": ["City Tour", "História"],
+    "whatsapp": "557999999999",
+    "cadastur": true
+  }
+]

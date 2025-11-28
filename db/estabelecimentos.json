@@ -1,0 +1,536 @@
+[
+  {
+    "id": "e1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
+    "nome": "Spezie Restaurante",
+    "descricao": "Ambiente acolhedor especializado em lanches gourmet e refeições variadas. O lugar ideal para um jantar descontraído com amigos.",
+    "historia": "Inaugurado em 2016, o Spezie nasceu com a proposta de oferecer uma opção diferenciada de gastronomia em Itabaiana, focando na qualidade dos ingredientes e no atendimento personalizado. Tornou-se referência para quem busca sabor e conforto.",
+    "cidade": "Itabaiana",
+    "latitude": -10.6994903,
+    "longitude": -37.416902,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Variada / Lanches",
+    "horario_funcionamento": {
+      "seg-sex": "17:00-23:00",
+      "sab-dom": "17:00-00:00"
+    },
+    "whatsapp_numero": "79999998877",
+    "link_google_maps": "https://www.google.com.br/maps/place/Spezie+Restaurante/data=!4m7!3m6!1s0x70ffa66d3b9eef3:0xc1358d8745f042de!8m2!3d-10.6994903!4d-37.416902!16s%2Fg%2F11bv3v5b2k!19sChIJ8-6502b6DwcR3kLwRYeNNcE?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "spezierestaurante",
+    "avaliacao": 4.5,
+    "imagens": [
+      "/assets/imagens/restaurantes/spezie.png",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800",
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Sanduíche Gourmet da Casa",
+        "descricao": "Pão brioche, blend de carnes selecionadas, queijo cheddar, bacon crocante e molho especial.",
+        "preco": "R$ 38,00"
+      },
+      {
+        "nome": "Pizza Especial",
+        "descricao": "Massa fina e crocante com recheios variados e borda recheada opcional.",
+        "preco": "R$ 55,00"
+      }
+    ],
+    "dica_do_chef": "Experimente nossos sucos naturais para acompanhar seu lanche!"
+  },
+  {
+    "id": "f2b3c4d5-e6f7-5a8b-9c0d-1e2f3a4b5c6d",
+    "nome": "Dedé do Peixe Bar e Restaurante",
+    "descricao": "O melhor da culinária de frutos do mar em Itabaiana. Moquecas, peixadas e petiscos frescos servidos em ambiente familiar.",
+    "historia": "Com anos de tradição, o Dedé do Peixe é sinônimo de qualidade quando o assunto é pescado. Começou como um pequeno bar e expandiu-se graças ao sucesso de sua famosa moqueca, atraindo clientes de toda a região.",
+    "cidade": "Itabaiana",
+    "latitude": -10.6817452,
+    "longitude": -37.4224005,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Frutos do Mar",
+    "horario_funcionamento": {
+      "ter-dom": "10:00-23:00"
+    },
+    "whatsapp_numero": "79998887766",
+    "link_google_maps": "https://www.google.com.br/maps/place/Ded%C3%A9+do+Peixe+Bar+e+Restaurante/data=!4m7!3m6!1s0x70ffa7f07a552ff:0x78d71d400fafbb63!8m2!3d-10.6817452!4d-37.4224005!16s%2Fg%2F11xm93_pf!19sChIJ_1KlB3_6DwcRY7uvD0Ad13g?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "dededopeixe",
+    "avaliacao": 4.6,
+    "imagens": [
+      "/assets/imagens/restaurantes/dededopeixe.png",
+      "https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?w=800",
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Moqueca de Camarão",
+        "descricao": "Camarões frescos cozidos lentamente no leite de coco com dendê, pimentões e coentro. Acompanha arroz, pirão e farofa.",
+        "preco": "R$ 160,00"
+      },
+      {
+        "nome": "Peixe Frito (Vermelha)",
+        "descricao": "Peixe inteira frito, crocante por fora e suculento por dentro. Acompanha vinagrete, salada e feijão tropeiro.",
+        "preco": "R$ 145,00"
+      }
+    ],
+    "dica_do_chef": "A moqueca serve bem até 3 pessoas, ideal para o almoço de domingo em família."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-6a7b-8c9d-0e1f2a3b4c5d",
+    "nome": "Restaurante Bacana",
+    "descricao": "Comida caseira com sabor de verdade. Buffet variado no almoço e pratos à la carte no jantar, com aquele tempero brasileiro inconfundível.",
+    "historia": "O Restaurante Bacana conquistou o coração dos itabaianenses pela simplicidade e sabor. Focado em oferecer uma refeição honesta e saborosa, é o ponto de encontro diário para muitos trabalhadores e famílias da cidade.",
+    "cidade": "Itabaiana",
+    "latitude": -10.6833544,
+    "longitude": -37.4225721,
+    "faixa_preco": "R$",
+    "tipo_culinaria": "Brasileira / Caseira",
+    "horario_funcionamento": {
+      "seg-sab": "11:00-15:00"
+    },
+    "whatsapp_numero": "79997776655",
+    "link_google_maps": "https://www.google.com.br/maps/place/Restaurante+Bacana/data=!4m7!3m6!1s0x70ffb6c0b8e0541:0xd89bf03bd1e28c93!8m2!3d-10.6833544!4d-37.4225721!16s%2Fg%2F11rsbwr_sn!19sChIJQQWOC2z7DwcRk4zi0Tvwm9g?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "restaurantebacana.itabaiana",
+    "avaliacao": 4.3,
+    "imagens": [
+      "/assets/imagens/restaurantes/bacana.png",
+      "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=800",
+      "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Feijoada Completa",
+        "descricao": "Tradicional feijoada com carnes nobres, acompanhada de arroz branco, couve refogada, laranja e farofa.",
+        "preco": "R$ 45,00"
+      },
+      {
+        "nome": "Prato Feito Bacana",
+        "descricao": "A melhor opção para o dia a dia: arroz, feijão, macarrão, salada e opção de carne grelhada ou cozida.",
+        "preco": "R$ 25,00"
+      }
+    ],
+    "dica_do_chef": "Chegue cedo para aproveitar todas as opções do buffet fresquinhas!"
+  },
+  {
+    "id": "b2c3d4e5-f6a7-7b8c-9d0e-1f2a3b4c5d6e",
+    "nome": "Restaurante Tempero do Sertão bbcb",
+    "descricao": "A autêntica culinária nordestina em um ambiente rústico e temático. Sinta-se no sertão com pratos cheios de história e sabor.",
+    "historia": "Um pedacinho do sertão dentro da cidade. O restaurante foi criado para homenagear as raízes nordestinas, com uma decoração temática encantadora e receitas passadas de geração em geração, preservando o verdadeiro tempero da terra.",
+    "cidade": "Itabaiana",
+    "latitude": -10.69998,
+    "longitude": -37.4122837,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Regional / Nordestina",
+    "horario_funcionamento": {
+      "seg-dom": "11:00-16:00"
+    },
+    "whatsapp_numero": "79996665544",
+    "link_google_maps": "https://www.google.com.br/maps/place/Restaurante+Tempero+do+Sert%C3%A3o+bbcb/data=!4m7!3m6!1s0x70ffa612f014dc5:0x7bf4ea824f249209!8m2!3d-10.69998!4d-37.4122837!16s%2Fg%2F11f262g_g5!19sChIJxU0BL2H6DwcRCZIkT4Lq9Hs?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "temperodosertao_itabaiana",
+    "avaliacao": 4.7,
+    "imagens": [
+      "/assets/imagens/restaurantes/temperodosertao.png",
+      "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+      "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Carne de Sol com Macaxeira",
+        "descricao": "Carne de sol macia acebolada, servida com macaxeira frita ou cozida, queijo coalho assado e feijão verde.",
+        "preco": "R$ 75,00"
+      },
+      {
+        "nome": "Galinha Caipira",
+        "descricao": "Galinha de capoeira guisada ao molho pardo, acompanhada de pirão, arroz e salada.",
+        "preco": "R$ 85,00"
+      }
+    ],
+    "dica_do_chef": "Não saia sem provar o doce de leite caseiro de sobremesa."
+  },
+  {
+    "id": "c3d4e5f6-a7b8-8c9d-0e1f-2a3b4c5d6e7f",
+    "nome": "Bar e restaurante galego do peixe",
+    "descricao": "Tradição em pescados e frutos do mar. O ponto de encontro para quem aprecia uma boa comida de boteco e peixe fresco.",
+    "historia": "Conhecido pela hospitalidade do 'Galego', o restaurante começou servindo petiscos para amigos e logo se tornou um dos locais mais queridos para comer peixe frito na cidade, mantendo a simplicidade e o sabor inigualável.",
+    "cidade": "Itabaiana",
+    "latitude": -10.6840918,
+    "longitude": -37.4199284,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Frutos do Mar / Boteco",
+    "horario_funcionamento": {
+      "ter-dom": "10:00-18:00"
+    },
+    "whatsapp_numero": "79995554433",
+    "link_google_maps": "https://www.google.com.br/maps/place/Bar+e+restaurante+galego+do+peixe/data=!4m7!3m6!1s0x70ffa7eb512fd91:0x239c295e956654c5!8m2!3d-10.6840918!4d-37.4199284!16s%2Fg%2F1tj1mqb7!19sChIJkf0StX76DwcRxVRmlV4pnCM?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "galegodopeixe",
+    "avaliacao": 4.4,
+    "imagens": [
+      "/assets/imagens/restaurantes/galegodopeixe.png",
+      "https://images.unsplash.com/photo-1559742811-822873691df8?w=800",
+      "https://images.unsplash.com/photo-1519708227418-c8fd9a3a277c?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Peixe à Moda da Casa",
+        "descricao": "Postas de peixe frito sequinho, servidas com farofa de camarão, vinagrete e arroz.",
+        "preco": "R$ 65,00"
+      },
+      {
+        "nome": "Caldo de Camarão",
+        "descricao": "Caldinho encorpado de camarão, ideal para abrir o apetite, servido com torradinhas.",
+        "preco": "R$ 15,00"
+      }
+    ],
+    "dica_do_chef": "Acompanhe o peixe frito com nossa cerveja sempre gelada!"
+  },
+{
+    "id": "72e6a4c2-9e1b-4f5a-8b0d-6e5c83f9e2d1",
+    "nome": "Restaurante Atlântico",
+    "descricao": "Ambiente à beira-mar, ideal para desfrutar da culinária regional brasileira com foco em frutos do mar e pratos da casa. Perfeito para o almoço em família.",
+    "historia": "Tradicional restaurante local, possivelmente associado à Pousada Florais do Atlântico, servindo a comunidade e turistas na Praia do Saco há anos.",
+    "cidade": "Estância",
+    "latitude": -11.2644462,
+    "longitude": -37.4425697,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Brasileira, Frutos do Mar",
+    "horario_funcionamento": {
+      "seg-dom": "11:00-16:00"
+    },
+    "whatsapp_numero": "79998887766",
+    "link_google_maps": "https://www.google.com.br/maps/place/Restaurante+Atl%C3%A2ntico/data=!4m7!3m6!1s0x710706c0a8901c3:0x1013fc3039a83f60!8m2!3d-11.2644462!4d-37.4425697!16s%2Fg%2F11bxjjv5gb!19sChIJwwGJCmxwEAcRYD-oOTD8ExA?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "restauranteatlantico_se",
+    "avaliacao": 4.2,
+    "imagens": [
+      "/assets/imagens/restaurantes/atlantico.png",
+      "https://images.unsplash.com/photo-1544549174-87498305e7e2?w=800",
+      "https://images.unsplash.com/photo-1563207127-66432f814982?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Moqueca de Camarão",
+        "descricao": "Camarões frescos cozidos no leite de coco, azeite de dendê e temperos regionais. Acompanha arroz e pirão.",
+        "preco": "R$ 95,00"
+      },
+      {
+        "nome": "Peixe Frito na Telha",
+        "descricao": "Peixe inteiro frito, crocante por fora e macio por dentro. Servido com vinagrete e farofa.",
+        "preco": "R$ 85,00"
+      }
+    ],
+    "dica_do_chef": "Experimente a Moqueca com o molho de pimenta da casa e uma água de coco bem gelada!"
+  },
+  {
+    "id": "2a8f3b9c-4d5e-4c7f-9a1b-0e2d5f3a6c8e",
+    "nome": "Churrascaria Estância Gaúcha",
+    "descricao": "O melhor do churrasco em rodízio, com cortes nobres e buffet variado, incluindo saladas e pratos quentes.",
+    "historia": "Fundada com a proposta de trazer a tradição do churrasco do Sul para o Nordeste, a Estância Gaúcha é referência em carne de qualidade na região.",
+    "cidade": "Estância",
+    "latitude": -11.2236443,
+    "longitude": -37.4216065,
+    "faixa_preco": "R$$$",
+    "tipo_culinaria": "Churrascaria, Rodízio",
+    "horario_funcionamento": {
+      "ter-sex": "11:30-15:00",
+      "sab-dom": "11:30-16:00"
+    },
+    "whatsapp_numero": "79997776655",
+    "link_google_maps": "https://www.google.com.br/maps/place/Churrascaria+Est%C3%Aancia+Ga%C3%BAcha/data=!4m7!3m6!1s0x710710840ed93a7:0x588f0f9143164559!8m2!3d-11.2236443!4d-37.4216065!16s%2Fg%2F11rhg5f40s!19sChIJp5PtQAhxEAcRWUUWQ5EPj1g?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "estanciagaucha_se",
+    "avaliacao": 4.5,
+    "imagens": [
+      "/assets/imagens/restaurantes/estanciagaucha.png",
+      "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?w=800",
+      "https://images.unsplash.com/photo-1546961314-8f9611b846e4?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Picanha Premium Fatiada",
+        "descricao": "Corte nobre, macio e suculento, servido no ponto da preferência do cliente.",
+        "preco": "R$ (Incluso no Rodízio)"
+      },
+      {
+        "nome": "Coração de Frango com Queijo",
+        "descricao": "Espetinho de coração de frango grelhado e coberto com queijo coalho.",
+        "preco": "R$ (Incluso no Rodízio)"
+      }
+    ],
+    "dica_do_chef": "Não deixe de provar o abacaxi grelhado com canela para acompanhar o rodízio. Ajuda a digerir e é delicioso!"
+  },
+  {
+    "id": "5d7c8e9f-0a1b-4c2d-3e4f-5g6h7i8j9k0l",
+    "nome": "Aconchego Dos Amigos",
+    "descricao": "Um ponto de encontro casual com cerveja gelada, porções saborosas e pratos executivos. Perfeito para o happy hour e refeições descontraídas.",
+    "historia": "Nascido da vontade de oferecer um ambiente acolhedor e familiar, o 'Aconchego' tornou-se rapidamente um favorito entre os moradores locais.",
+    "cidade": "Estância",
+    "latitude": -11.2693991,
+    "longitude": -37.4376086,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Bar e Restaurante, Petiscos",
+    "horario_funcionamento": {
+      "seg-sab": "17:00-00:00",
+      "dom": "12:00-22:00"
+    },
+    "whatsapp_numero": "79996665544",
+    "link_google_maps": "https://www.google.com.br/maps/place/Aconchego+Dos+Amigos/data=!4m7!3m6!1s0x710706fdd21b83d:0xaa1a856fe99d4e7a!8m2!3d-11.2693991!4d-37.4376086!16s%2Fg%2F11bzx79j8s!19sChIJPbgh3W9wEAcRek6d6W-FGqo?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "aconchegodosamigos_se",
+    "avaliacao": 4.4,
+    "imagens": [
+      "/assets/imagens/restaurantes/aconchegodosamigos.png",
+      "https://images.unsplash.com/photo-1627917326464-946e492160d2?w=800",
+      "https://images.unsplash.com/photo-1574087113110-e5959556d10f?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Bolinho de Bacalhau",
+        "descricao": "Tradicionais bolinhos de bacalhau, crocantes por fora e cremosos por dentro. Porção com 10 unidades.",
+        "preco": "R$ 45,00"
+      },
+      {
+        "nome": "Carne de Sol com Macaxeira",
+        "descricao": "Carne de sol na chapa desfiada e frita, acompanhada de macaxeira (aipim/mandioca) cozida e manteiga de garrafa.",
+        "preco": "R$ 65,00"
+      }
+    ],
+    "dica_do_chef": "Peça a porção de carne de sol e combine com uma das cervejas artesanais da nossa carta!"
+  },
+  {
+    "id": "9f4e2d1c-8b7a-4f6e-5d4c-3b2a1f0e9d8c",
+    "nome": "Restaurante e Pizzaria Saborear",
+    "descricao": "Um novo conceito em pizzaria e restaurante em Estância, SE. Oferece uma experiência sensorial, variedades de pizzas, drinques, e um espaço moderno e aconchegante com espaço kids.",
+    "historia": "Reinaugurado recentemente (2023) em um espaço ampliado e modernizado, o Saborear é um estabelecimento tradicional que se reinventou, oferecendo um cardápio vasto com mais de 90 sabores de pizza.",
+    "cidade": "Estância",
+    "latitude": -11.2645877,
+    "longitude": -37.4412085,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Pizzaria, Brasileira, Almoço",
+    "horario_funcionamento": {
+      "seg-sex": "11:00-23:00",
+      "sab-dom": "11:00-00:00"
+    },
+    "whatsapp_numero": "7999654291",
+    "link_google_maps": "https://www.google.com.br/maps/place/Restaurante+e+Pizzaria+Saborear/data=!4m7!3m6!1s0x7107142291f8e69:0x178415532b842c0d!8m2!3d-11.2645877!4d-37.4412085!16s%2Fg%2F11ry3r0n9z!19sChIJaY4fKUJxEAcRDSyEK1MVhBc?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "saborearestancia",
+    "avaliacao": 4.6,
+    "imagens": [
+      "/assets/imagens/restaurantes/saborear.png",
+      "https://images.unsplash.com/photo-1565299624942-4386e72551e0?w=800",
+      "https://images.unsplash.com/photo-1588315024769-8d8a7e371727?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Pizza Portuguesa Deluxe",
+        "descricao": "Mussarela, presunto, ovos, cebola, azeitonas e ervilha. Uma receita clássica aprimorada.",
+        "preco": "R$ 69,00"
+      },
+      {
+        "nome": "Buffet de Almoço (Self-Service)",
+        "descricao": "Variedade de pratos quentes e saladas da culinária brasileira, ideal para o almoço diário.",
+        "preco": "R$ (Preço por quilo)"
+      }
+    ],
+    "dica_do_chef": "Com mais de 90 sabores, peça a pizza Doce de Leite com Coco para fechar a noite com chave de ouro!"
+  },
+  {
+    "id": "1c3b5d7e-9f0a-2b4c-6d8e-0f1a2b3c4d5e",
+    "nome": "Lunary Restaurante",
+    "descricao": "Cozinha caseira e saborosa, com foco em pratos executivos e comida regional a preços acessíveis. Excelente custo-benefício para o dia a dia.",
+    "historia": "Pequeno e acolhedor, o Lunary é um restaurante de bairro que se destaca pela qualidade da comida simples e pelo atendimento caloroso.",
+    "cidade": "Estância",
+    "latitude": -11.269618,
+    "longitude": -37.4380531,
+    "faixa_preco": "R$",
+    "tipo_culinaria": "Comida Caseira, Regional",
+    "horario_funcionamento": {
+      "seg-sex": "07:00-14:00"
+    },
+    "whatsapp_numero": "79995554433",
+    "link_google_maps": "https://www.google.com.br/maps/place/Lunary+Restaurante/data=!4m7!3m6!1s0x7107162c9932c31:0x8a416d80970e3fe8!8m2!3d-11.269618!4d-37.4380531!16s%2Fg%2F11ts041cqh!19sChIJMSyTyWJxEAcR6D8Ol4BtQYo?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "lunaryrestaurante_se",
+    "avaliacao": 4.0,
+    "imagens": [
+      "/assets/imagens/restaurantes/lunary.png",
+      "https://images.unsplash.com/photo-1505253758474-0f1e00e408f9?w=800",
+      "https://images.unsplash.com/photo-1573030283020-f709d73c7895?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Prato Feito (PF) do Dia",
+        "descricao": "Opção variada de almoço com arroz, feijão, proteína (carne, frango ou ovo), e acompanhamento sazonal.",
+        "preco": "R$ 25,00"
+      },
+      {
+        "nome": "Caldo de Peixe",
+        "descricao": "Caldo nutritivo e saboroso, feito com peixe fresco e temperos da horta, perfeito para um lanche rápido.",
+        "preco": "R$ 18,00"
+      }
+    ],
+    "dica_do_chef": "Chegue cedo para garantir o Prato Feito do dia, é o nosso mais procurado!"
+  },
+  {
+    "id": "8a0b1c2d-3e4f-5061-7283-94a5b6c7d8e9",
+    "nome": "Restaurante Dona Nalva",
+    "descricao": "Culinária regional brasileira com o tempero caseiro e a tradição de Lagarto. Ideal para almoços de segunda a sábado.",
+    "historia": "Tradição local em Lagarto, Sergipe, servindo pratos típicos da região há muitos anos e cultivando um ambiente familiar.",
+    "cidade": "Lagarto",
+    "latitude": -10.9219799,
+    "longitude": -37.6704421,
+    "faixa_preco": "R$",
+    "tipo_culinaria": "Regional Brasileira",
+    "horario_funcionamento": { "seg-sab": "11:00-15:00" },
+    "whatsapp_numero": "79999112233",
+    "link_google_maps": "https://www.google.com.br/maps/place/Restaurante+Dona+Nalva/data=!4m7!3m6!1s0x71023013e4121df:0x10cbe873549017d6!8m2!3d-10.9219799!4d-37.6704421!16s%2Fg%2F1ptz547t2!19sChIJ3yFBPgEjEAcR1heQVHPoyxA?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "restaurantedonanalva",
+    "avaliacao": 4.4,
+    "imagens": [
+      "/assets/imagens/restaurantes/donanalva.png",
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
+      "https://images.unsplash.com/photo-1571066811602-716837d681de?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Moqueca de Camarão Completa",
+        "descricao": "Camarões frescos cozidos no dendê com leite de coco e acompanhamentos regionais.",
+        "preco": "R$ 95,00"
+      },
+      {
+        "nome": "Feijoada à Dona Nalva",
+        "descricao": "Feijoada completa servida às quartas e sábados, com carnes nobres e farofa crocante.",
+        "preco": "R$ 48,00"
+      }
+    ],
+    "dica_do_chef": "Peça o prato do dia para uma experiência autêntica e fresca da culinária sergipana!"
+  },
+  {
+    "id": "f9e8d7c6-b5a4-3210-fedc-ba9876543210",
+    "nome": "Palatino Pizzeria e Ristorante",
+    "descricao": "O melhor da cozinha italiana na região. Pizzas de longa fermentação e pratos clássicos da Itália.",
+    "historia": "Fundado com a paixão pela verdadeira culinária italiana. O Palatino traz para Lagarto o sabor das pizzas e massas tradicionais.",
+    "cidade": "Lagarto",
+    "latitude": -10.9139626,
+    "longitude": -37.6666739,
+    "faixa_preco": "R$$",
+    "tipo_culinaria": "Italiana/Pizzaria",
+    "horario_funcionamento": { "ter-dom": "18:00-23:30" },
+    "whatsapp_numero": "79999223344",
+    "link_google_maps": "https://www.google.com.br/maps/place/Palatino+Pizzeria+e+Ristorante/data=!4m7!3m6!1s0x710233aa3671ac7:0x3482c4ea11fb272!8m2!3d-10.9139626!4d-37.6666739!16s%2Fg%2F11y3my57kh!19sChIJxxpnozojEAcRcrIfoU4sSAM?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "palatinopizzeria",
+    "avaliacao": 4.6,
+    "imagens": [
+      "/assets/imagens/restaurantes/palatino.png",
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
+      "https://images.unsplash.com/photo-1571066811602-716837d681de?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Pizza Quatro Queijos Palatino",
+        "descricao": "Combinação de muçarela, gorgonzola, parmesão e provolone, harmonizada com azeite trufado.",
+        "preco": "R$ 75,00"
+      },
+      {
+        "nome": "Lasanha à Bolonhesa Clássica",
+        "descricao": "Massa fresca, molho bolonhesa encorpado e muito queijo gratinado.",
+        "preco": "R$ 55,00"
+      }
+    ],
+    "dica_do_chef": "Para sobremesa, a Tiramisù da casa é a pedida perfeita para finalizar a experiência italiana!"
+  },
+  {
+    "id": "1f2e3d4c-5b6a-7089-91a2-b3c4d5e6f708",
+    "nome": "Biroska Drinks Restaurante e Pizzaria",
+    "descricao": "O ponto de encontro da cidade! Drinks criativos, petiscos variados e pizzas para todos os gostos.",
+    "historia": "Famosa por seu ambiente descontraído, a Biroska combina bar e pizzaria, sendo um local de referência para happy hour e jantares informais.",
+    "cidade": "Lagarto",
+    "latitude": -10.9309315,
+    "longitude": -37.7015904,
+    "faixa_preco": "R$",
+    "tipo_culinaria": "Bar/Lanches/Pizzaria",
+    "horario_funcionamento": { "ter-dom": "17:00-00:00" },
+    "whatsapp_numero": "79999334455",
+    "link_google_maps": "https://www.google.com.br/maps/place/Biroska+Drinks+Restaurante+e+Pizzaria/data=!4m7!3m6!1s0x7102337f661dc5b:0x3ec5793462e533c2!8m2!3d-10.9309315!4d-37.7015904!16s%2Fg%2F11byhjvqpb!19sChIJW9xh9jcjEAcRwjPlYjR5xT4?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "biroskadrinks_se",
+    "avaliacao": 4.2,
+    "imagens": [
+      "/assets/imagens/restaurantes/biroska.png",
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
+      "https://images.unsplash.com/photo-1571066811602-716837d681de?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Pastel de Carne do Sol",
+        "descricao": "Pastéis gigantes e crocantes recheados com a saborosa carne do sol desfiada.",
+        "preco": "R$ 35,00"
+      },
+      {
+        "nome": "Drink Biroska Especial",
+        "descricao": "Coquetel exclusivo da casa com frutas regionais e um toque de gin.",
+        "preco": "R$ 28,00"
+      }
+    ],
+    "dica_do_chef": "Aproveite a happy hour e combine os drinks com os pastéis salgados."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7089-9a0b-c1d2e3f405a6",
+    "nome": "Quintal do Chef",
+    "descricao": "Experiência gastronômica de alto nível, com cozinha contemporânea e pratos autorais.",
+    "historia": "Criado por um chef renomado, o Quintal do Chef é um refúgio gourmet, focado na alta gastronomia acessível e na valorização de ingredientes frescos.",
+    "cidade": "Lagarto",
+    "latitude": -10.9143971,
+    "longitude": -37.6726255,
+    "faixa_preco": "R$$$",
+    "tipo_culinaria": "Contemporânea",
+    "horario_funcionamento": { "qua-dom": "19:00-23:00" },
+    "whatsapp_numero": "79999445566",
+    "link_google_maps": "https://www.google.com.br/maps/place/Quintal+do+Chef/data=!4m7!3m6!1s0x71023f88aaa5447:0x8dce8f467f6f3e57!8m2!3d-10.9143971!4d-37.6726255!16s%2Fg%2F11w1vkystc!19sChIJR1SqivgjEAcRVz5vf0aPzo0?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "quintaldochef",
+    "avaliacao": 4.7,
+    "imagens": [
+      "/assets/imagens/restaurantes/quintaldochef.png",
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
+      "https://images.unsplash.com/photo-1571066811602-716837d681de?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Risoto de Camarão e Limão Siciliano",
+        "descricao": "Risoto cremoso com camarões salteados e o frescor do limão siciliano.",
+        "preco": "R$ 88,00"
+      },
+      {
+        "nome": "Salmão Grelhado com Purê de Batata Doce",
+        "descricao": "Filé de salmão grelhado servido com um suave purê de batata doce e molho de maracujá.",
+        "preco": "R$ 92,00"
+      }
+    ],
+    "dica_do_chef": "Consulte a carta de vinhos e peça uma sugestão de harmonização para o seu prato."
+  },
+  {
+    "id": "0a9b8c7d-6e5f-4032-1a0b-9c8d7e6f5432",
+    "nome": "Bar e Restaurante do Juninho",
+    "descricao": "O lugar perfeito para uma cerveja gelada, petiscos e refeições simples em um ambiente animado e popular.",
+    "historia": "Um bar tradicional e ponto de encontro na comunidade de Lagarto, conhecido pelo atendimento descontraído e comida de qualidade.",
+    "cidade": "Lagarto",
+    "latitude": -10.9350719,
+    "longitude": -37.7080879,
+    "faixa_preco": "R$",
+    "tipo_culinaria": "Bar/Comida Simples",
+    "horario_funcionamento": { "seg-dom": "10:00-22:00" },
+    "whatsapp_numero": "79999556677",
+    "link_google_maps": "https://www.google.com.br/maps/place/Bar+e+Restaurante+do+Juninho/data=!4m7!3m6!1s0x710234c0622cde3:0xb77dd5b8bdb0c4ed!8m2!3d-10.9350719!4d-37.7080879!16s%2Fg%2F11btyyd_sy!19sChIJ480iBkwjEAcR7cSwvbjVfbc?authuser=0&hl=pt-BR&rclk=1",
+    "instagram_handle": "bardojuninho",
+    "avaliacao": 4.0,
+    "imagens": [
+      "/assets/imagens/restaurantes/juninho.png",
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
+      "https://images.unsplash.com/photo-1571066811602-716837d681de?w=800"
+    ],
+    "pratos_destaque": [
+      {
+        "nome": "Churrasco Misto na Chapa",
+        "descricao": "Seleção de carnes (picanha, linguiça e frango) servida na chapa, acompanhada de vinagrete e farofa.",
+        "preco": "R$ 60,00"
+      },
+      {
+        "nome": "Cerveja Trincando",
+        "descricao": "Cerveja popular servida na temperatura ideal, sempre gelada.",
+        "preco": "R$ 10,00"
+      }
+    ],
+    "dica_do_chef": "Não há erro: uma picanha na chapa e uma cerveja extra gelada fazem a combinação perfeita!"
+  }
+]
