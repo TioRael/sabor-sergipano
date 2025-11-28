@@ -12,7 +12,7 @@ Professora: Edlange Lopes da Silva
 [![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)]()
 
 ## 🚀 Visite o projeto
-Link do site ao vivo: (falta subir kkk)
+Link do site ao vivo: [(Sabor Sergipano)](https://tiorael.github.io/sabor-sergipano/)
 
 ## 📖 Sobre o Projeto
 
@@ -70,7 +70,7 @@ A culinária do interior tem um potencial turístico enorme, mas está pouco dig
 ## 🎨 Protótipo Navegável
 
 Todo o site é o próprio protótipo de alta fidelidade!  
-Acesse: (falta adicionar o link)
+Acesse: [(Sabor Sergipano)](https://tiorael.github.io/sabor-sergipano/)
 
 ## 📄 Licença
 
